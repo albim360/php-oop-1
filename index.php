@@ -6,19 +6,18 @@ class Movie {
     public string $durata;
     public int $annouscita;
 
-    function __construct($nome) {
+    function __construct($nome, $genere) {
         $this->nome = $nome;
+        $this->genere = $genere;
     }
 }
 
-$film1 = new Movie("Boolnception");
-$film1->genere = "Fantasy";
+$film1 = new Movie("Boolnception", "Fantasy");
 $film1->durata = "2 ore";
 $film1->annouscita = "2023";
 
 
-$film2 = new Movie("Boolengers");
-$film2->genere = "Azione";
+$film2 = new Movie("Boolengers", "Azione");
 $film2->durata = "5 ore";
 $film2->annouscita = "2022";
 
